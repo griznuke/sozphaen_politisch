@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Sozialphänomenologische Annäherungen an das Politische</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/beige.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+		
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		
+		<style class="style-fonts">
+		@font-face {
+			font-family: "Virgil";
+			src: url("https://excalidraw.com/Virgil.woff2");
+		}									
+		</style>
+
+		<style>
+			
+			.material-symbols-rounded {
+				font-variation-settings:
+				'FILL' 0,
+				'wght' 400,
+				'GRAD' -25,
+				'opsz' 48
+			}
+			
+			.reveal .slides { margin-top: 10px; }
+
+			.double-imageblock{
+				display: flex;
+				justify-content: center;
+			}
+			.double-imageblock figure{
+				width: 50%;
+			}
+			.double-imageblock figure img{
+				height: 550px;
+				object-fit: contain;
+			}
+			.double-imageblock figure video{
+				height: 380px;
+				object-fit: cover;
+			}
+
+			/*.double-imageblock figure figcaption{
+				font-size: 1.1rem;
+				margin-top: -52px;
+				margin-right: 15px;
+				text-align: right;
+				color: #fff1e8;
+				text-shadow: 0px 0px 3px #200d02
+			}*/
+			.uebersichtspunkt{
+				position: relative;
+				left: 20px;
+			}
+			.emphasize{
+				color: #ff9900;
+				text-shadow: 0px 0px 3px #000000;
+				/* font-weight: bold; */
+			}
+			.emphasize_politik{
+				color: #ff0000;
+				text-shadow: 0px 0px 3px #000000;
+			}
+			.citing{
+				text-align: right;
+				font-size: 75%;
+			}
+			#einschub {
+				color: #ff0000;
+				text-shadow: 0px 0px 3px #000000;
+				margin-top: 20px;
+				font-size: 125%;
+				font-weight: bold;
+			}
+			
+			.alltagSinnprovinz{
+				background-color: #ff990033;
+				border: 6px solid #333;
+				position:absolute;
+				border-radius: 49%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.polSinnprovinz{
+				background-color: #ff000033;
+				border: 6px solid #333;
+				position:absolute;
+				border-radius: 49%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.videoBox{
+				border: 4px solid #333;
+				background-color: #fff0ddbb;
+				border-radius: 10px;
+			}
+			@keyframes rotateUpDown {
+				0% {
+					transform: rotate(-20deg);
+				}
+				50% {
+					transform: rotate(20deg);
+				}
+				100% {
+					transform: rotate(-20deg);
+				}
+			}			
+			@keyframes moveRight {
+				0% {
+					left: 0;
+				}
+				100% {
+					left: 50%;
+				}
+			}
+			@keyframes breath {
+				0% {
+					transform: scale(6);
+				}
+				50% {
+					transform: scale(8);
+				}
+				100% {
+					transform: scale(6);
+				}
+			}
+			.reveal .footnotes {
+				font-size: 60%;
+				margin-top: 2rem;
+				text-align: left;
+				}
+			.reveal .footnotes p{
+				margin-bottom: -1rem;
+			}
+			.reveal sup {
+				font-size: 50%;
+			}
+			.cite{
+				font-size: 80%;
+				text-align: center;
+				line-height: 1.2;/* Verringert den Zeilenabstand */
+			}
+			.cite p{
+				margin: 0;
+				padding: 0;
+				display: inline;
+			}
+		</style>
+	</head>
+	
+	<body>
+		
+		<div class="reveal">
+			<div class="slides">
+			<!-- uni wien und doctoral school-->
+				<section id="title" data-state="hide-menubar hide-menu">
+					
+					<h1 style="font-size: 6rem;">Sozialphänomenologische Annäherung an das Politische:</h1>
+					<h2 style="font-size: 3rem; margin-top:-1rem;">mit Alfred Schütz und Hannah Arendt</h2>
+					<h4 style="margin-top:2rem">Ein Vortrag von <a href="https://phaenomenologie.univie.ac.at/georg-harfensteller/" target="_blank">Georg Harfensteller</a></h4>
+					<div style="display:flex; margin-top: 30px; align-items: center; justify-content: center;">
+					<a href="https://www.univie.ac.at/" target="_blank">
+						<img src="images/1200px-Logo_Universität_Wien,_Farbe.svg.png" alt="Uni Wien logo" style="height: 100px; background: transparent;">
+					</a>
+
+					<a href="https://www.uni-graz.at/de/" target="_blank">
+						<img src="images/Logo_Uni-Graz_4c.png" alt="graz logo" style="height: 120px; background: transparent;">
+					</a>
+
+						<a href="https://oegs.ac.at/" target="_blank">
+							<img src="images/ögs.png" alt="ÖGS Logo" style="height: 100px; background: transparent;">
+						</a>
+
+						<a href="https://soziologie.de/aktuell" target="_blank">
+							<img src="images/dgs.png" alt="DGS Logo" style="height: 100px; background: transparent;">
+						</a>
+
+			</section>
+				<section id="intro_pic" data-state="hide-menubar hide-menu">
+				
+				<!-- two pictures side by side-->
+					<div class="double-imageblock">
+						<figure>
+							<img src="images/abbortion.jpg" alt="Abortion Protest" />
+							<figcaption style="font-size:80%"><a target="_blank" href="https://unsplash.com/photos/a-woman-holding-a-sign-that-says-abortion-is-healthcare-JbAOhfWum1s?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Abortion is Healthcare</a></figcaption>
+						</figure>
+						<figure>
+							<img src="images/disk_sprache.jpg" alt="Duden Diskriminierungsfreie Sprache"/>
+							<figcaption style="font-size:80%"><a target="_blank" href="https://shop.duden.de/Einfach-koennen-diskriminierungsfreie-Sprache/9783411756940?campaignCode=do-sprache-kommunikation">Disk.freie Sprache</a></figcaption>
+						</figure>
+						<figure>
+							<img src="images/immigration.jpg" alt="Immigration Protest"/>
+							<figcaption style="font-size:80%"><a target="_blank" href="https://unsplash.com/photos/woman-protesting-holding-no-more-false-borders-printed-board-signage-IcUghf_D96A">No False Borders</a></figcaption>
+						</figure>
+					</div>
+
+				</section>
+				<section id="intro_text" data-state="hide-menubar hide-menu" data-markdown>
+								<textarea data-template>
+
+## Methodische Selbstverortung
+
+Sozialphäno. der Deutungshoheit - doppelte Gefahr
+
+I) In eidetischen Variation ähnliche Problemstellung (Grenzen des Politischen) &rarr; Teil des Diskurses (&not; Soziologie)
+
+II) In Systematisierung der Machtverhältnisse wird Erlebnis der Akteur:innen thematisch vorbestimmt.</br> (&not; deskriptive Phänomenologie)
+
+---
+### *critical phenomenology*
+
+- Gesellschaftskritisch -> Diskursbeteiligung gewollt!
+- wird Erlebnis subalterner/aktivistischer Personen gerecht
+
+&rarr; Arbeitsmaterial, aber keine methodische Fundierung
+
+---
+### Politische Phänomenologie
+
+- Politische Differenz (Erlebnis &rarr; Staatsführung)
+
+"Das Politische bezeichnet gerade die Störungen, Unterbrechungen und Umwälzungen des Normalbetriebs der Politik."
+<!-- .element: class="cite" -->
+(Vgl. Bedorf und Herrmann - [Phänomenologie des Politischen](https://www.fernuni-hagen.de/philosophie/lg3/forschung/phaenomenologie-des-politischen.shtml))
+<!-- .element: class="citing" -->
+
+- eid. Reduktion: Macht und Institution
+<br>&rarr; *erklärt* Situationen, bevor sie Erlebnisse *beschreibt*
+
+---
+
+**Sozialphänomenologie des Politischen**
+
+Das Politische erklärt sich in der *Funktion* für den Alltag sozialer Akteur:innen als *sinngebende Schlussinstanz*.
+
+(Vgl. Srubar, *Kosmion*, S. 247)
+<!-- .element: class="citing" -->
+
+
+</textarea>
+			</section>
+				<section data-name="TOC" data-sm="false">
+					<h2>Inhalt</h2>
+
+					<ol style="list-style-type:upper-roman">
+						<li><span class="uebersichtspunkt">Grenzen der allt. Lebenswelt</span></li>
+						<li><span class="uebersichtspunkt">Politische als <em>Vollzug der Pluralität</em></span></li>
+						<li><span class="uebersichtspunkt">Probl. Situationen und das Politische</span></li>
+						<li><span class="uebersichtspunkt">Fallbeispiel: Disk.freie Sprache</span></li>
+					</ol>
+					
+				</section>
+
+<section data-markdown>
+	<textarea data-template>
+
+## Lebenswelt
+<!-- .slide: data-name="Lebenswelt" data-auto-animate -->
+
+Das Politische als *Sinnprovinz* &rarr; Einstellung, Weisen des Verhaltens und Wissen (Vgl. Wissenschaft, Religiösität, Phantasie, Kunst, Sport etc.)
+
+Kulturelle Genese, Veränderung und Erhalt von Sinnprovinzen gründet in der Rolle für soziale Akteur:innen
+
+&rarr; Notwendigkeit ihrer Praxis im Ausgang vom Alltag
+
+---
+<!-- .slide: data-auto-animate -->
+## Lebenswelt
+
+"Nur in der alltäglichen Lebenswelt kann sich eine gemeinsame kommunikative Umwelt konstituieren. Die Lebenswelt des Alltags ist folglich die vornehmliche und ausgezeichnete Wirklichkeit des Menschen."
+<!-- .element: class="cite" -->
+(Schütz und Lickmann, *Strukturen der Lebenswelt (SdL)*, S. 29)
+<!-- .element: class="citing" -->
+
+&rarr; Natürliche Einstellung des Alltags markiert Grenzen der Praxis und Möglichkeiten der Sinnprovinzen 
+
+---
+<!-- .slide: data-auto-animate-restart data-auto-animate -->
+## Natürliche Einstellung
+
+- Suspendierung des Zweifels, ob Welt, Menschen und Objekte existieren &rarr; *Epoché* des Alltags (*SdL*, S. 59)
+- Intersub. Teilhabe und Entsprechung der Natur-, Sozial- und Kulturwelt (*SdL*, S. 31)
+- Planhierarchie des *first things first* (*SdL*, S. 85)
+
+---
+<!-- .slide: data-auto-animate -->
+## Natürliche Einstellung
+
+"Das wirkende Selbst, das in lebendiger Gegenwart in seinen ablaufenden Handlungen lebt und auf die zu verwirklichenden Ziele und Gegenstände ausgerichtet ist, erfährt sich als Urheber des ablaufenden Handelns und somit als ungeteiltes, ganzes Selbst."
+<!-- .element: class="cite" -->
+(Schütz, engl: *On multiple Realities* S. 540, deutsch: *Über die mannigfaltigen Wirklichkeiten*, in Gesammelte Aufsätze I., S. 247) 
+<!-- .element: class="citing" -->
+
+---
+<!-- .slide: data-auto-animate -->
+
+## Natürliche Einstellung
+
+"Wir können sagen, daß unsere natürliche Einstellung der Welt des täglichen Lebens gegenüber durchgehend vom pragmatischen Motiv bestimmt ist."
+<!-- .element: class="cite" -->
+(Schütz und Luckmann, *SdL*, S. 33)
+<!-- .element: class="citing" -->
+
+Von kult. Weltbildern überformt! (Vgl. *SdL*, S.219)
+
+Funkt. These: Konkrete (politische) Sinnprovinzen bewältigen Situationen, die in alltäglicher Einstellung unbewältigt bleiben.
+
+---
+
+## Das Politische
+<!-- .slide: data-name="Das Politische" -->
+
+Warum Hannah Arendts *Vollzug der Pluralität*?
+
+- *Vita Activa* (VA) als politische Anthropologie &rarr; vorinstitutionelle Analyse von Praxis (Arbeiten, Herstellen, Sprechen und Handeln)
+- Sophie Loidolts "Phenomenology of Plurality" erm. phänomenologische Interpretation
+- Lebensweltbezug im "Bezugsgewebe menschlicher Angelegenheiten"
+
+---
+<!-- .slide: data-auto-animate -->
+
+## Vollzug der Pluralität
+
+Ausgangspunkt ist eine Einstellung, in der aufgrund von Freiheit etwas Neues angefangen werden kann.
+
+"So artikuliert sich bei Plato die Doppeldeutigkeit des Wortes άρχή (arché) in dem Satz: Zur Herrschaft berechtigt ist, *was Anfang ist*. (...) Mit diesem Verlust (GH: Untergang der antiken Welt) verlor die Tradition politischen Denkens die elementarste und ursprünglichste Erfahrung des gewaltigen *Vermögens menschlicher Freiheit*."
+<!-- .element: class="cite" -->
+(Hervorhebung G.H., Arendt, *VA*, S. 219)
+<!-- .element: class="citing" -->
+
+---
+<!-- .slide: data-auto-animate -->
+
+## Vollzug der Pluralität
+
+Platon: *Vermögen der Freiheit* Anlehnung an leitende Funktion der Hausherrin.
+
+Bloß allt.-prag. *Tun* **VS** *Wissen*, was zu tun ist
+
+Wissen und Freiheit dann, wenn "das Handeln a priori aus dem Verlauf der menschlichen Angelegenheiten" ausgeschaltet ist. (*VA*, S. 218) 
+
+---
+<!-- .slide: data-auto-animate -->
+
+## Vollzug der Pluralität
+
+**Kritik**: Subalternes Leben (Sklaven, Frauen) und identitätspolitische Positionen ausgeschlossen.
+
+Kritik verkennt Charakter des Analogiearguments!
+
+Bsp.: "Platonische Utopie", sodass alle Bürger:innen der Polis sich als "Glieder einer Familie fühlen und verhalten könnten." (*VA*, S. 218)
+
+---
+<!-- .slide: data-auto-animate -->
+
+## Vollzug der Pluralität
+
+**Sozialphänomenologische Alternative**: Das Politische als Begegnungsraum (des *Sprechens und Handelns*), indem gemeinsam das Vermögen der Freiheit und das Wissen, was zu tun ist, im Wohle der Gemeinschaft angewandt werden.
+
+---
+
+### Politische Epoché / Erkenntnisstil:
+
+- Pers. Situat. einklammern (&not;vergessen! &rarr; Freiheit)
+- In Öffentlichkeit mit Blick auf Zusammenleben (*Bezugsgewebe menschlicher Angelegenheiten*)
+- Wissensaustausch (Sprechen) und "Neues Anfangen" (Handeln)
+
+Beschreibt Politik, aber was mit *Selbstverständnis* politischer Akteur:innen um Deutungshoheit?
+
+---
+
+**Auslöser für Wechsel in politische Einstellung?**
+
+In Harfensteller, *Rissen im Bezugsgewebe* Umstände zur Gruppenkonstitution nah an Arendt.
+
+Für **Sektion Soziologische Theorie**: Übergang allt. zur pol. Einstellung
+
+---
+<!-- .slide: data-auto-animate -->
+
+## Problematische Situation
+<!-- .slide: data-name="Probl. Situation" -->
+
+Neuen Sinnauslegung, wenn pragmatische Motive des Alltag gestört/ unterbrochen. (*SdL*, S. 84f.)
+
+Erlebter Widerstand &rarr; **Neues Anfangen müssen!**
+
+Unterbrechungen ohne Sinnauslegung: Rückkehr zu prag. Motive der Planerfüllung (*first things first*).
+
+---
+<!-- .slide: data-auto-animate -->
+## Problematische Situation
+
+Bestehendem Wissen: Kult. und biogr. Horizont
+
+**Hinreichender pol. Widerstand:**
+
+3a) Eigene oder fremde allt. Praxis
+
+3b) Grund in illegitimer Generalisierung
+
+3c) in Koordination (S&H) gemeinsam und bewältigt
+
+---
+### Alltägliche Praxis
+
+Ausgangspunkt: Allt. Widerstand &rarr; Unterbrechung eigene/ fremde Praxis
+
+Fremde Praxis?: Selbstverständliche Entsprechung der Natur-, Sozial- und Kulturwelt (inkl. Hierarchie/ Aufteilung) + ...
+<!-- .element: class="fragment" -->
+---
+### Illegitime Generalisierung
+
+Widerstand aufgrund Gemeinsamkeit mit Anderen
+
+&rarr; Komp. Bewältigung in *Einzigartigkeit* der Pluralität!
+
+Übergang! &rarr; Politisierung der Situation als freie persönliche Entscheidung erfahren &rarr; erste performative Bewältigung
+
+---
+
+**Bsp: Rassistisch/ sexistischer Blick**
+
+&rarr; Reduktion ethnische/ sexuelle Lesbarkeit in *davon unabhängigen Praxis*. 
+
+Weltbild bestimmt Legitimität der Einschränkung von Praxis, zeigt sich an typischen/ vertraute oder untypische/ fremde Berufe, Kleidung, Verhalten wie Mitsprache/ Initiative etc.
+
+---
+### Illegitime Generalisierung
+
+Brauch es gemeinsame problematische Erfahrung? 
+
+Illegitime Generalisierung ausschlaggebend!
+<!-- .element: class="fragment" -->
+
+Gemeinsamkeit (Gleicher Ort im Bezugsgewebe) erst in pol. Einstellung.
+<!-- .element: class="fragment" -->
+
+---
+<!-- .slide: data-auto-animate -->
+
+### Koordination - Status der Gemeinsamkeit?
+
+Erlebnis illegitimer Generalisierung
+
+&rarr; pol. Sprechen und Handeln
+
+&rarr; *Gemeinsame* Sinnbildung lebensweltlicher Abhängigkeit/ Widerstände
+
+&rarr; *Koordinierter* Kampf um Veränderung/ Anerkennung (oder Deutungshoheit?!)
+
+&rarr; Welt als sinnhaft gemeinsame
+
+---
+<!-- .slide: data-auto-animate -->
+### Koordination - Status der Gemeinsamkeit?
+
+Nicht Lösung des Problems, sondern Praxis zur Umgänglichkeit der Situation.
+
+Probl. Situation bekommt "Vorzeichen" &rarr; pol. Sinn wird angewandt
+
+Im Diskurs um **Deutungshoheit** unterschiedliche Dinge mit pol. Vorzeichen
+
+---
+<!-- .slide: data-auto-animate-restart data-auto-animate -->
+## Anwendung Disk.freie Sprache
+<!-- .slide: data-name="Disk.freie Sprache" -->
+
+"Die einzige rein materielle, unerläßliche Vorbedingung der Machterzeugung ist das menschliche Zusammen selbst. (...) Die Grenze der Macht liegt nicht in ihr selbst, sondern in der gleichzeitigen Existenz anderer Machtgruppen, also in dem Vorhandensein Anderer, die außerhalb des eigenen Machtbereichs stehen und selbst Macht entwickeln. Diese Begrenztheit der Macht durch Pluralität ist nicht zufällig, weil ihre Grundvoraussetzung ja von vornherein eben diese Pluralität ist." 
+<!-- .element: class="cite" -->
+(Arendt, *VA*, S. 195)
+<!-- .element: class="citing" -->
+
+---
+<!-- .slide: data-auto-animate -->
+## Anwendung Disk.freie Sprache
+
+Diskr.freie Sprache analog zum rass./sex. Blick
+
+*"Schutz" der Sprache:* Widerstand als erlebte Grenzen der Macht 
+
+&rarr; Essenzialisierung, Totalisierung oder Kommodifizierung (eigenen pol.) Praxis und Wissen
+
+&rarr; Politik der *Entpolitisierung*
+
+---
+
+<!-- .slide: data-auto-animate -->
+## Anwendung Disk.freie Sprache
+
+<div style="font-size:30px">
+
+|     | "Schutz" der Sprache | Diskrim.freie Sprache |
+| - | - | - |
+| prob. Praxis | Normative Kritik an Sprachgebrauch | Sprachliche Gewalt |
+| Illeg. General. | Herausheben aus Status Quo &rarr; Segregation | Rassistische, sexistische und ableistische Objektivierung/ Ausgrenzung |
+| Koord. Bew. | Machtkonsolidierung &rarr; Konservierung Status Quo | Rücksichtnahme/Kritik als politische Praxis |
+
+</div>
+
+</textarea>
+</section>
+			
+				<section data-state="hide-menubar hide-menu">
+									
+					<h3><u>Vielen Dank für die Aufmerksamkeit</u></h3>
+						<p>https://griznuke.github.io/sozphean_politisch</p>
+					<figure>
+						<img src="images/qr-code.png" alt="QRcode" style="height: 320px; background: transparent;"/>
+					</figure>
+					
+				
+				
+				</section>
+
+			</div>
+
+		</div>
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/simplemenu/simplemenu.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				slideNumber: "c/t",
+				simplemenu: {
+				// ...
+				barhtml: {
+					header: "<div class='menubar'><ul class='menu'></ul><div class='slide-number'></div><div>",
+					footer: ""
+				},
+				flat: true,
+			},
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom, Simplemenu ]
+			});
+		</script>
+		<!--
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/simplemenu/simplemenu.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				slideNumber: "c/t",
+				simplemenu: {
+				// ...
+				barhtml: {
+					header: "<div class='menubar'><ul class='menu'></ul><div class='slide-number'></div><div>",
+					footer: ""
+				},
+				flat: true,
+			},
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom, Simplemenu ]
+			});
+		</script>-->
+	</body>
+</html>
